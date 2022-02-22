@@ -1,0 +1,26 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  padding: 1rem;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+.link-title {
+  font-weight: bold;
+}
+
+.book-title {
+  font-style: italic;
+  margin-right: 0.6rem;
+}

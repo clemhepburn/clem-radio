@@ -1,0 +1,24 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  padding: 1rem;
+}
+
+h3 {
+  margin: 0;
+}
+
+.announcement {
+  margin: 1rem 0;
+}
+.events {
+  padding: 1rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
