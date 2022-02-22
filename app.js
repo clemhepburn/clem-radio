@@ -1,11 +1,13 @@
 ;(() => {
   "use strict";
+  //defining variables
   const TRIES_PER_BOX = 50;
   const randUint = range => Math.random() * range | 0;
   const placing  = [...document.querySelectorAll(".box")].map(el => Bounds(el, 5));
   const fitted = [];
   const areaToFit = Bounds();
   var maxTries = TRIES_PER_BOX * placing.length;
+  // while loop to place the divs
   while (placing.length && maxTries > 0) {
       let i = 0;
       while (i < placing.length) {
@@ -17,6 +19,7 @@
           i++;
       }
   } 
+  //function to define the boundaries of the divs
   function Bounds(el, pad = 0) {   
       const box = el?.getBoundingClientRect() ?? {
           left: 0, top: 0, 
@@ -30,6 +33,7 @@
           b: box.bottom + pad,
           w: box.width + pad * 2,
           h: box.height + pad * 2,
+          // if it overlaps...
           overlaps(bounds) { 
               return !(
                   this.l > bounds.r || 
@@ -38,11 +42,13 @@
                   this.b < bounds.t
               ); 
           },
+          // move it somewhere else
           moveTo(x, y) {
               this.r = (this.l = x) + this.w;
               this.b = (this.t = y) + this.h;
               return this;
           },
+          // place the element and give it a class of placed
           placeElement() {
               if (el) {
                   el.style.top = (this.t + pad) + "px";
@@ -55,12 +61,14 @@
   }
   })();
 
-//randomly place 27 stars on the page
+//randomly place 27 stars on the page, one for each of my years on earth
 const stars = () => {
+    // define variables
     const numStars = 27;
     const star = document.createElement('div');
     star.classList.add('star');
     const container = document.body;
+    // for loop to create 27 stars
     for (let i = 0; i < numStars; i++) {
         const starClone = star.cloneNode(true);
         container.appendChild(starClone);
@@ -72,5 +80,5 @@ const stars = () => {
         star.innerText = '*';
     });
 }
-
+// call the function
 stars();
