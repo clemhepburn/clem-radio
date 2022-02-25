@@ -22,7 +22,7 @@
   //function to define the boundaries of the divs
   function Bounds(el, pad = 0) {   
       const box = el?.getBoundingClientRect() ?? {
-          left: 0, top: 0, 
+          left: 40, top: 40, 
           right: innerWidth, bottom: innerHeight, 
           width: innerWidth, height: innerHeight
       };
@@ -82,3 +82,10 @@ const stars = () => {
 }
 // call the function
 stars();
+
+var colors = ["#D3A7A7", "#D7D988", "#BA8350", "#A7C2E1", "#BEB1C2", "#E7D0D9"];
+var colorPlanets = document.querySelectorAll(".link");
+for (var i = 0; i < colorPlanets.length; i++) {
+  colorPlanets[i].style.backgroundColor = colors[i];
+}
+

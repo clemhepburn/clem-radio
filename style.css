@@ -9,7 +9,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.01em;
   font-style: normal;
-  background-color: rgb(153, 181, 173);
+  background-color: floralwhite;
 }
 
 h1 {
@@ -34,10 +34,10 @@ img {
 
 .box {
   border: 1px solid black;
-  width: fit-content;
-  width: -moz-fit-content;
-  height: 50px;
-  padding: 1rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 0;
   position: absolute;
   top: 0px;
   left: 0pc;
@@ -45,20 +45,39 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(153, 181, 173);
-  z-index: 11111;
+  background-color: floralwhite;
+  z-index: 11;
+}
+
+.label {
+  display: none;
+}
+
+.box:hover .label {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  padding: 0.2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
+  border: black 1px solid;
+  border-radius: 5px;
+  background-color: floralwhite;
+  z-index: 22222;
 }
 
 .link {
-  background-color: rgb(137, 159, 152);
+  border:rgb(0, 0, 0) solid 1px;
 }
 
 .star {
   position: absolute;
   cursor: normal;
   font-family: 'Courier', monospace;
-  font-size: 1.2rem;
-  color:rgb(185, 215, 205)
+  font-size: 0.8rem;
+  color: black;
 }
 
 a {
@@ -68,13 +87,10 @@ a {
 }
 
 a > div:hover {
-  background-color: rgb(173, 203, 194);
+  /* background-color: rgb(255, 242, 200); */
 }
 
 
-footer span {
-  padding: 1rem;
-}
 
 @media (max-width: 768px) {
 
