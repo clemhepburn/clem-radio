@@ -10,6 +10,10 @@ body {
   font-style: normal;
 }
 
+h1 {
+  font-style: italic;
+}
+
 .books {
   display: flex;
   flex-direction: column;
@@ -40,6 +44,7 @@ body {
 img {
   width: 300px;
   margin-bottom: 1rem;
+  display: block;
 }
 
 .img-container {
