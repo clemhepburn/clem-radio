@@ -2,125 +2,83 @@ body {
   max-width: 100vw;
   max-height: 100vh;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   box-sizing: border-box;
-  font-family: 'Helvetica', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.01em;
   font-style: normal;
-  background-color: floralwhite;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: 400;
-  margin: 0;
-}
-
-
-main {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-
-.box {
-  border: 1px solid black;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  padding: 0;
-  position: absolute;
-  top: 0px;
-  left: 0pc;
+.books {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: floralwhite;
-  z-index: 11;
+  line-height: 1.5;
+  margin-top: 1rem;
 }
 
-.label {
-  display: none;
+.link-title {
+  font-weight: bold;
 }
 
-.box:hover .label {
-  display: block;
-  position: absolute;
-  top: 30px;
-  left: 0;
-  padding: 0.2rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  color: black;
-  border: black 1px solid;
-  border-radius: 5px;
-  background-color: floralwhite;
-  z-index: 22222;
+.links-nav {
+  margin: 1rem 0;
 }
 
-.link {
-  border:rgb(0, 0, 0) solid 1px;
-}
-
-.star {
-  position: absolute;
-  cursor: normal;
-  font-family: 'Courier', monospace;
-  font-size: 0.8rem;
-  color: black;
-}
-
-a {
-  text-decoration: none;
-  color: black;
+.book-title {
   font-style: italic;
 }
 
-a > div:hover {
-  /* background-color: rgb(255, 242, 200); */
+.info {
+  margin-top: 1rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  width: 300px;
+  margin-bottom: 1rem;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.caption {
+  margin-top: 4rem;
+}
+
+h3 {
+  margin: 0;
+}
+
+.events {
+  margin-top: 1rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.links-nav {
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+a {
+  color: blue;
 }
 
 
-
-@media (max-width: 768px) {
-
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Helvetica, sans-serif;
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  header {
-    height: 20px;
-    padding: 0;
-    margin: 0;
-  }
-
-  h1 {
-    padding: 0;
-    margin: 0;
-  }
-
-  main {
-    flex-direction: column;
-    padding: 1rem;
-  }
-
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  height: 50px;
+  bottom: 0;
 }
