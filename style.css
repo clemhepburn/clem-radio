@@ -115,3 +115,67 @@ footer {
   height: 50px;
   bottom: 0;
 }
+
+@media (max-width: 768px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: auto;
+
+  }
+
+  div {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    padding: 0;
+    margin: 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+   
+  .art-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .art {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+    height: auto;
+  }
+
+  * {
+    text-align: center;
+  }
+}
