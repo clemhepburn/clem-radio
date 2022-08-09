@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgb(162, 158, 148);
 }
 
 img {
@@ -23,6 +24,13 @@ p {
   font-size: 20px;
   line-height: 1.4em;
   text-align: center;
+}
+
+.signature {
+  font-family: cursive;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 1.5em;
 }
 
 a {
